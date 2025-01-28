@@ -30,6 +30,7 @@ registerTask("cpp", "natives/cpp/build/Release")
 registerTask("rust", "natives/rust/target/release")
 registerTask("csharp", "natives/csharp/bin/Release")
 registerTask("go", "natives/go/build")
+registerTask("kotlin", "natives/kotlin/build/bin/native/releaseShared")
 
 fun registerTask(name: String, native: String) {
     tasks.register<JavaExec>(name) {
